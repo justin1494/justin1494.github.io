@@ -10,7 +10,7 @@ const getBill = () => {
   if (priceInput.value && peopleInput.value) {
     error.textContent = "";
     const price = parseFloat(priceInput.value);
-    const people = parseFloat(peopleInput.value);
+    const people = parseInt(peopleInput.value);
     const tipValue = parseFloat(tip.value);
 
     cost.textContent = ((price + price * tipValue) / people).toFixed(2);
