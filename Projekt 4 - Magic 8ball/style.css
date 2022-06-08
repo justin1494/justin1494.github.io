@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   width: 1000px;
   height: 600px;
+  /* background-color: green; */
 }
 
 .info {
@@ -34,15 +35,20 @@ body {
 
 .ball-img {
   position: relative;
-  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2500px;
+  /* background-color: blue; */
 }
 
 .ball-img img {
   position: absolute;
-  top: 30px;
-  left: 300px;
-  width: 300px;
+  /* top: 30px; */
+  left: 375px;
+  width: 250px;
   cursor: pointer;
+  /* background-color: red; */
 }
 
 .question-area {
@@ -86,26 +92,26 @@ body {
 
 @keyframes shake {
   0% {
-    left: 290px;
+    left: 350px;
   }
 
   20% {
-    left: 340px;
+    left: 400px;
   }
 
   40% {
-    left: 290px;
+    left: 350px;
   }
 
   60% {
-    left: 340px;
+    left: 400px;
   }
 
   80% {
-    left: 290px;
+    left: 350px;
   }
 
   100% {
-    left: 300px;
+    left: 400px;
   }
 }
