@@ -1,6 +1,6 @@
 :root {
   --main-color: rgb(195, 74, 61);
-  --hover-color: rgb(231, 120, 107);
+  --secondary-color: rgb(60, 60, 60);
 }
 
 * {
@@ -19,6 +19,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
@@ -36,6 +37,7 @@ body {
   );
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .icons {
@@ -47,7 +49,7 @@ body {
   margin-top: 5px;
 }
 
-.color,
+.color-button,
 .info {
   display: flex;
   justify-content: center;
@@ -56,6 +58,7 @@ body {
   height: 20px;
   color: white;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 h1 {
@@ -147,6 +150,10 @@ h1 {
   display: none;
 }
 
+.archive-data p {
+  margin-bottom: 10px;
+}
+
 .modal-wrapper {
   position: absolute;
   height: 100vh;
@@ -192,5 +199,53 @@ h1 {
   border: solid 2px var(--main-color);
   background-color: rgb(134, 134, 134);
   color: white;
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  right: 0%;
+  top: 20%;
+  background-color: var(--secondary-color);
+  width: 50px;
+  height: 200px;
+  transition: transform 0.5s;
+}
+
+.colors.hidden {
+  transform: translateX(100%);
+}
+
+.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: rgb(195, 74, 61);
+}
+
+.blue {
+  background-color: rgb(122, 137, 188);
+}
+
+.green {
+  background-color: rgb(40, 120, 61);
+}
+
+.red:hover,
+.blue:hover,
+.green:hover {
+  opacity: 90%;
   cursor: pointer;
 }
