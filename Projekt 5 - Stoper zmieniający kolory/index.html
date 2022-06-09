@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projekt 5 - stoper zmianiający kolory</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/dc238c17a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="icons">
+            <div class="color">
+                <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-question"></i>
+            </div>
+
+        </div>
+        <h1>Stoper</h1>
+        <p class="time"><span class="minutes">0</span>:<span class="seconds">00</span></p>
+        <div class="media-buttons">
+            <button class="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="pause">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="stop">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+            <button class="exit">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <button class="archive">
+            <p>ARCHIWUM</p>
+        </button>
+        <div class="archive-data hidden">
+        </div>
+    </div>
+    <div class="modal-wrapper hidden">
+        <div class="info-modal">
+            <h2>Instrukcja:</h2>
+            <div class="start-info">
+                <p> <i class="fa-solid fa-play"></i> - start</p>
+            </div>
+            <div class="pause-info">
+                <p><i class="fa-solid fa-pause"></i> - pauza</p>
+            </div>
+            <div class="stop-info">
+                <p> <i class="fa-solid fa-stop"></i> - stop</p>
+            </div>
+            <div class="exit-info">
+                <p><i class="fa-solid fa-xmark"></i> - skasuj wszystko (łącznie z archiwum)</p>
+            </div>
+            <div class="archive-info">
+                <p><span class="archive-info-span">archiwum</span> - zobacz wcześniejsze pomiary</p>
+            </div>
+            <button>Zamknij</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
