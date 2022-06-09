@@ -13,6 +13,25 @@ body {
   background-color: rgb(233, 233, 233);
 }
 
+.back-to-main {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  left: 10px;
+  top: 10px;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  z-index: 10;
+}
+
+.back-to-main a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
 .wrapper {
   width: 800px;
   background-color: #fff;
