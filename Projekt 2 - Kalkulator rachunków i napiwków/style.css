@@ -14,6 +14,9 @@ body {
 }
 
 .back-to-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 150px;
   height: 60px;
@@ -24,9 +27,6 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   z-index: 10;
-}
-
-.back-to-main a {
   text-decoration: none;
   color: black;
   font-size: 16px;
