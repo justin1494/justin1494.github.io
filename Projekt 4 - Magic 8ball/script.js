@@ -4,6 +4,19 @@ const answer = document.querySelector(".answer");
 const error = document.querySelector(".error");
 
 const getAnswer = () => {
+  answer.textContent = "";
+  setTimeout(() => {
+    if (input.value !== "" && input.value.slice(-1) === "?") {
+      error.textContent = "";
+      answer.innerHTML = `<span>Odpowiedź:</span> ${answers[number]}`;
+    } else if (input.value !== "" && input.value.slice(-1) !== "?") {
+      error.textContent = 'Pytanie musi być zakończone znakiem "?"';
+      answer.textContent = "";
+    } else {
+      error.textContent = "Musisz zadać pytanie!";
+      answer.textContent = "";
+    }
+  }, 1000);
   const answers = [
     "tak",
     "nie",
@@ -16,16 +29,16 @@ const getAnswer = () => {
 
   ball.classList.add("shake-animaton");
 
-  if (input.value !== "" && input.value.slice(-1) === "?") {
-    error.textContent = "";
-    answer.innerHTML = `<span>Odpowiedź:</span> ${answers[number]}`;
-  } else if (input.value !== "" && input.value.slice(-1) !== "?") {
-    error.textContent = 'Pytanie musi być zakończone znakiem "?"';
-    answer.textContent = "";
-  } else {
-    error.textContent = "Musisz zadać pytanie!";
-    answer.textContent = "";
-  }
+  // if (input.value !== "" && input.value.slice(-1) === "?") {
+  //   error.textContent = "";
+  //   answer.innerHTML = `<span>Odpowiedź:</span> ${answers[number]}`;
+  // } else if (input.value !== "" && input.value.slice(-1) !== "?") {
+  //   error.textContent = 'Pytanie musi być zakończone znakiem "?"';
+  //   answer.textContent = "";
+  // } else {
+  //   error.textContent = "Musisz zadać pytanie!";
+  //   answer.textContent = "";
+  // }
 
   setTimeout(() => ball.classList.remove("shake-animaton"), 1000);
 };
