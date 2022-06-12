@@ -28,19 +28,10 @@
                 </button>
             </div>
         </nav>
-        <div class="notes">
-            <div class="note">
-                <div class="note-title">
-                    <p>to jest tytuł </p>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <p class='note-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum dolorem
-                    fuga qui simil</p>
-            </div>
-        </div>
+        <div class="notes"></div>
 
     </div>
-    <div class="modal ">
+    <div class="modal hidden">
         <h2>DODAJ NOTATKĘ</h2>
         <label for="category">Wybierz kategorię</label>
         <select id="category">
@@ -52,13 +43,14 @@
         <label for="category">Wpisz treść</label>
         <textarea name="category" cols="30" rows="5"></textarea>
         <div class="buttons">
-            <button>
+            <button class='modal-save'>
                 <p><i class="fa-solid fa-check"></i>Zapisz</p>
             </button>
-            <button>
+            <button class='modal-exit'>
                 <p><i class="fa-solid fa-ban"></i>Anuluj</p>
             </button>
         </div>
+        <p class="modal-warning hidden">Musisz wybrać kategorię notatki!</p>
     </div>
 
 
