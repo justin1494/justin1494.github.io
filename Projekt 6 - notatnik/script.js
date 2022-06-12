@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 /* MODAL */
 const modal = document.querySelector(".modal");
 const modalSaveBtn = document.querySelector(".modal-save");
@@ -35,6 +36,8 @@ const showModal = () => {
 const hideModal = () => {
   modal.classList.add("hidden");
   modalWarning.classList.add("hidden");
+  modalInput.value = "";
+  modalCategory.options[0].selected = true;
 };
 
 const deleteNotes = () => {
@@ -61,7 +64,6 @@ const deleteOneNote = () => {
 deleteOneNote();
 
 const addNote = () => {
-  const allNotesArr = Array.from(notesDiv.children);
   const categoryOptionIndex =
     modalCategory.options[modalCategory.selectedIndex];
   const notesBackgoundColor = `--${categoryOptionIndex.value}-color`;
@@ -104,5 +106,12 @@ modalSaveBtn.addEventListener("click", addNote);
 modalInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     modalSaveBtn.click();
+  }
+});
+
+// HIDDING MODAL IF CLICKED OUTSIDE
+body.addEventListener("click", (e) => {
+  if (!e.target.closest(".add-note") && !e.target.closest(".modal")) {
+    hideModal();
   }
 });
