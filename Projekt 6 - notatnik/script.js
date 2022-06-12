@@ -71,6 +71,10 @@ const addNote = () => {
   const NewNoteContent = `${modalInput.value}`;
 
   if (categoryOptionIndex.value == 0) {
+    modalWarning.textContent = "Musisz wybrać kategorię notatki!";
+    modalWarning.classList.remove("hidden");
+  } else if (modalInput.value === "") {
+    modalWarning.textContent = "Musisz dodać treść do notatki!";
     modalWarning.classList.remove("hidden");
   } else {
     const newNote = `<div class="note" style="background-color:${rs.getPropertyValue(

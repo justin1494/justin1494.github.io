@@ -118,6 +118,7 @@ nav {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  animation: in-animation 0.3s;
 }
 
 .modal h2 {
@@ -128,12 +129,15 @@ nav {
 .modal select {
   width: 90%;
   height: 30px;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
 }
 
 .modal textarea {
   margin-bottom: 30px;
   width: 90%;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
 }
 
 .modal label {
@@ -153,4 +157,13 @@ nav {
 
 .modal-warning.hidden {
   visibility: hidden;
+}
+
+@keyframes in-animation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
