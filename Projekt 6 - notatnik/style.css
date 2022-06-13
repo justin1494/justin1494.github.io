@@ -64,6 +64,7 @@ nav {
   border: solid 2px black;
   border-radius: 5px;
   padding: 2px 20px;
+  cursor: pointer;
 }
 
 .fa-solid {
@@ -108,6 +109,10 @@ nav {
   padding: 10px;
 }
 
+.note .fa-xmark {
+  cursor: pointer;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -136,6 +141,7 @@ nav {
   height: 30px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .modal textarea {
