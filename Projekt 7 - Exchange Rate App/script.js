@@ -5,18 +5,11 @@ const amountTwo = document.querySelector(".amount-two");
 const swapBtn = document.querySelector(".swap");
 const rateInfo = document.querySelector(".rate-info");
 
-// TEST --------------
-const test = (e) => {
-  console.log(e);
-};
-
-// -------------------
-
 let myHeaders = new Headers();
 myHeaders.append("apikey", "bzua1WFikQvdquyv0JdOOvY7Y8WmjnTO");
 
 let requestOptions = {
-  method: "GET",
+  //   method: "GET",
   redirect: "follow",
   headers: myHeaders,
 };
