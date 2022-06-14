@@ -18,7 +18,9 @@ let rs = getComputedStyle(r);
 
 //  GETTING NOTES FROM LOCALSTORAGE -------
 
+//in order to get the notes chronologically
 let lowestToHighest = Object.keys(window.localStorage).sort((a, b) => a - b);
+// -------------------
 
 if (lowestToHighest !== undefined) {
   for (let i = 0; i < lowestToHighest.length; i++) {
