@@ -88,6 +88,8 @@ taskInput.addEventListener("keyup", (e) => {
 inputModal.addEventListener("keyup", (e) => {
   if (e.key == "Enter") {
     acceptEdit();
+  } else if (e.key == "Escape") {
+    cancelModal();
   }
 });
 
