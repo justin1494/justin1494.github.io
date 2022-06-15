@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>todo list</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/dc238c17a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-body">
+        <div class="header-input">
+            <h1>todo list</h1>
+            <div class="input-div">
+                <input class="task-input" type="text" placeholder="Wpisz tereść zadania...">
+                <button class="add-button">add</button>
+            </div>
+            <p class="task-input-warning hidden">Proszę wpisąć task do wykonania!</p>
+        </div>
+        <div class="todo-list">
+            <h2>list zadań:</h2>
+
+            <!-- <div class="task">
+                <p class="single-task">Posprzątać kuchnię</p>
+                <div class="task-buttons">
+                    <button class="done"><i class="fa-solid fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="remove"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>-->
+
+            <div class="task">
+                <p>Przykładowe zadanie</p>
+                <div class="task-buttons">
+                    <button class="done"><i class="fa-solid fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="remove"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-edit">
+        <h3>Edytuj zadanie:</h3>
+        <input class="modal-input" type="text" placeholder="test">
+        <div class="edit-buttons">
+            <button class="accept-button">zatwierdź</button>
+            <button class="cancel-button">anuluj</button>
+        </div>
+    </div>
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
