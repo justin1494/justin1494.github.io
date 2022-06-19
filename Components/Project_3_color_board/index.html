@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color board</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="controls">
+            <div class="animation-speed">
+                <p>ANIMATION SPEED:</p>
+                <div class="animation-buttons">
+                    <button class="btn" data-setting="speed" data-speed="40">SLOW</button>
+                    <button class="btn" data-setting="speed" data-speed="3">NORMAL</button>
+                    <button class="btn" data-setting="speed" data-speed="0.5">FAST</button>
+                </div>
+            </div>
+            <div class="color-range">
+                <P>COLOR RANGE:</P>
+                <div class="color-buttons">
+                    <button class="btn" data-setting="color" data-color-range="0">RED</button>
+                    <button class="btn" data-setting="color" data-color-range="100">GREEN</button>
+                    <button class="btn" data-setting="color" data-color-range="200">BLUE</button>
+                    <button class="btn" data-setting="color" data-color-range="360">NORMAL</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <input type="range" min="1" max="100" value="50" class="slider-input" id="slider">
+            <p>Saturation: <span class="saturation-percent">70%</span></p>
+        </div>
+
+        <div class="box">
+
+
+        </div>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

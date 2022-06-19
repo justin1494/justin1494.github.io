@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #3f3f3f;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.wrapper {
+  width: 1000px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: solid white 1px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animation-buttons,
+.color-buttons,
+.animation-speed,
+.color-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.animation-speed,
+.color-range {
+  flex-direction: column;
+}
+
+.animation-speed p,
+.color-range p {
+  font-size: 20px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+input {
+  width: 400px;
+  padding: 10px 0;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.square {
+  aspect-ratio: 1/1;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+
+.square:hover {
+  transition-duration: 0s !important;
+}
