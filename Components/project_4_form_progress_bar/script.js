@@ -5,31 +5,31 @@ const prevBtn = document.querySelector(".btn-prev");
 const nextBtn = document.querySelector(".btn-next");
 
 let currentStep = 1;
+console.log(currentStep);
 
 const handleNextBtn = () => {
   currentStep++;
-
   if (currentStep > steps.length) {
     currentStep = steps.length;
   }
-
   handleProgressBar();
+  handleButtons();
+  handleFormSteps();
 };
 
 const handlePrevBtn = () => {
   currentStep--;
-
   if (currentStep < 1) {
     currentStep = 1;
   }
 
   handleProgressBar();
+  handleButtons();
+  handleFormSteps();
 };
 
 const handleProgressBar = () => {
   steps.forEach((step, index) => {
-    console.log(step);
-    console.log(index);
     if (index < currentStep) {
       step.classList.add("active-step");
     } else {
@@ -38,12 +38,10 @@ const handleProgressBar = () => {
   });
 
   const activeSteps = document.querySelectorAll(".active-step");
+  const progressBarPercent =
+    ((activeSteps.length - 1) / (steps.length - 1)) * 100;
 
-  progressBar.style.width =
-    ((activeSteps.length - 1) / (steps.length - 1)) * 100 + "%";
-
-  handleButtons();
-  handleFormPage();
+  progressBar.style.width = `${progressBarPercent}%`;
 };
 
 const handleButtons = () => {
@@ -57,12 +55,12 @@ const handleButtons = () => {
   }
 };
 
-const handleFormPage = () => {
-  formPages.forEach((page) => {
-    if (currentStep == page.dataset.number) {
-      page.classList.add("active-page");
+const handleFormSteps = () => {
+  formPages.forEach((element) => {
+    if (currentStep == element.dataset.number) {
+      element.classList.add("active-page");
     } else {
-      page.classList.remove("active-page");
+      element.classList.remove("active-page");
     }
   });
 };
