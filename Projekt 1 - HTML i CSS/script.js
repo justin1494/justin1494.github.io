@@ -1,5 +1,16 @@
 const input = document.querySelector("input");
-const liList = document.querySelectorAll("li");
+const drinkList = document.querySelector(".drink-list");
+
+fetch("./drinks.json")
+  .then((res) => res.json())
+  .then((data) => {
+    const drinks = document.createElement("ul");
+    data.Drinks.forEach((el) => {
+      drinks.innerHTML = drinks.innerHTML + `<li>${el}</li>`;
+    });
+    console.log(drinks);
+    drinkList.append(drinks);
+  });
 
 const getInput = (e) => {
   for (const li of liList) {

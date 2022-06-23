@@ -33,7 +33,7 @@ body {
 }
 
 .wrapper {
-  width: 800px;
+  width: 700px;
   background-color: #fff;
   box-shadow: 0 0 10px #000;
 }
@@ -44,7 +44,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   position: relative;
-  height: 360px;
+  height: 220px;
   padding: 20px 40px;
   font-family: "Dancing Script", cursive;
   background-image: url("https://cdn.pixabay.com/photo/2018/06/03/14/32/whisky-3450670_960_720.jpg");
