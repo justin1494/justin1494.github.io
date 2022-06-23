@@ -4,7 +4,7 @@ const colorBtns = document.querySelectorAll('[data-setting="color"]');
 const slider = document.querySelector("#slider");
 const sliderInfo = document.querySelector(".saturation-percent");
 
-const squares = 392;
+const squares = 336;
 let sliderValue = 70;
 let range = 360;
 

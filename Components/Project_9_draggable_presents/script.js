@@ -14,8 +14,8 @@ presents.forEach((present) => {
 });
 
 boxes.forEach((box) => {
-  box.addEventListener("dragover", (e) => {
-    e.preventDefault();
+  box.addEventListener("dragover", (event) => {
+    event.preventDefault();
     const isDragged = document.querySelector(".is-dragged");
 
     box.appendChild(isDragged);

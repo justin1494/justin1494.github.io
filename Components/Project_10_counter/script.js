@@ -11,7 +11,7 @@ const startCounter = (entry) => {
       const updateCounter = () => {
         const finalNumber = item.dataset.number;
         const value = parseInt(item.textContent);
-        const speed = finalNumber / 200;
+        const speed = finalNumber / 300;
 
         if (value < finalNumber) {
           item.textContent = `${Math.floor(value + speed)}`;
@@ -22,6 +22,10 @@ const startCounter = (entry) => {
       };
 
       updateCounter();
+    });
+  } else {
+    counterItems.forEach((item) => {
+      item.textContent = 0;
     });
   }
 };

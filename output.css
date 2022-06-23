@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vh;
+  min-height: 100vh;
+  background-color: #73646a;
+  font-family: "Montserrat", sans-serif;
+}
+
+embed {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=output.css.map */

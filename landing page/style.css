@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #e5e5e5;
+  background-color: #252525;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  font-family: "Montserrat", sans-serif;
+  border: white 2px solid;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding: 25px 0;
+  gap: 100px;
+  width: 100%;
+  background-color: #252525;
+  z-index: 10;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav :hover {
+  font-weight: 700;
+}
+nav .active {
+  font-weight: 700;
+}
+
+.about {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #252525;
+  width: 100%;
+  height: 650px;
+}
+
+h1 {
+  position: relative;
+  font-size: 3.5rem;
+  margin-left: 50px;
+  margin-bottom: 240px;
+}
+
+h1::before {
+  content: "I'm Marcin Jaskółowski";
+  font-family: "La Belle Aurore", cursive;
+  color: #717171;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-top: -2.5rem;
+}
+
+.about-img {
+  position: absolute;
+  bottom: -270px;
+  right: 0px;
+  height: 600px;
+}
+
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 1000%;
+  height: 900px;
+  padding-top: 100px;
+  background-color: #424242;
+}
+.skills .skills-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  margin-left: -250px;
+  padding-bottom: 100px;
+}
+.skills .skills-title h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.skills .skills-title img {
+  height: 60px;
+}
+.skills .skills-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+}
+.skills .skills-display img {
+  width: 200px;
+}
+.skills .skills-display .skills-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 680px;
+  margin-top: -50px;
+  color: white;
+}
+.skills .skills-display .skills-logos .fa-brands {
+  position: relative;
+  width: 100px;
+  margin: 40px 60px;
+  font-size: 8rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+.skills .skills-display .skills-logos .fa-brands:hover {
+  transform: scale(1.2);
+}
+.skills .skills-display .skills-logos .fa-brands:hover::after {
+  opacity: 1;
+}
+.skills .skills-display .skills-logos .fa-brands:after {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  font-size: 1.5rem;
+  font-family: "La Belle Aurore", cursive;
+  color: #e5e5e5;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.skills .skills-display .skills-logos .fa-html5:after {
+  content: "HTML";
+}
+.skills .skills-display .skills-logos .fa-html5:hover {
+  color: #dd4b25;
+}
+.skills .skills-display .skills-logos .fa-css3-alt:after {
+  content: "CSS";
+}
+.skills .skills-display .skills-logos .fa-css3-alt:hover {
+  color: #2ea7e2;
+}
+.skills .skills-display .skills-logos .fa-bootstrap:after {
+  content: "Bootstrap";
+}
+.skills .skills-display .skills-logos .fa-bootstrap:hover {
+  color: #9264d6;
+}
+.skills .skills-display .skills-logos .fa-js-square:after {
+  content: "JavaScript";
+}
+.skills .skills-display .skills-logos .fa-js-square:hover {
+  color: #f0d81d;
+}
+.skills .skills-display .skills-logos .fa-react:after {
+  content: "React";
+}
+.skills .skills-display .skills-logos .fa-react:hover {
+  color: #03d5f8;
+}
+.skills .skills-display .skills-logos .fa-figma:after {
+  content: "Figma";
+}
+.skills .skills-display .skills-logos .fa-figma:hover {
+  color: #f76d5e;
+}
+.skills .skills-display .skills-logos .fa-brands:nth-child(1):after,
+.skills .skills-display .skills-logos .fa-brands:nth-child(2):after,
+.skills .skills-display .skills-logos .fa-brands:nth-child(3):after {
+  top: -30px;
+}
+.skills .skills-display .skills-logos .fa-brands:nth-child(4):after,
+.skills .skills-display .skills-logos .fa-brands:nth-child(5):after,
+.skills .skills-display .skills-logos .fa-brands:nth-child(6):after {
+  bottom: -70px;
+}
+
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 1000%;
+  height: 2000px;
+  background-color: #893333;
+}
+.projects .components {
+  height: 800px;
+  width: 1100px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.projects .components .components-box {
+  display: flex;
+  transform: translateX(-15400px);
+  transition: transform 0.5s;
+}
+.projects .components .components-box embed {
+  height: 800px;
+  width: 1100px;
+}
+.projects .apps {
+  height: 800px;
+  width: 1100px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.projects .apps .apps-box {
+  display: flex;
+  transform: translateX();
+  transition: transform 0.5s;
+}
+.projects .apps .apps-box embed {
+  height: 800px;
+  width: 1100px;
+}
+
+.contact {
+  height: 800px;
+}
+
+/*# sourceMappingURL=style.css.map */

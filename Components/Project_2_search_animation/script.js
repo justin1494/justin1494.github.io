@@ -19,3 +19,5 @@ searchInput.addEventListener("keypress", (e) => {
     searchInput.classList.remove("active");
   }
 });
+
+console.log("project 2 loaded");

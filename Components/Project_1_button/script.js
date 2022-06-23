@@ -17,3 +17,4 @@ const getTarget = (e) => {
 };
 
 button.addEventListener("click", getTarget);
+console.log("project 1 loaded");
