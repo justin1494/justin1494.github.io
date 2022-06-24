@@ -10,7 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-color: #29303b;
+  background-color: rgb(75, 75, 75);
 }
 
 .back-to-main {

@@ -4,13 +4,18 @@
   padding: 0;
 }
 
+:root {
+  --main-color: rgb(123, 123, 123);
+  --main-color-hover: rgb(72, 72, 72);
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(75, 75, 75);
 }
 
 .back-to-main {
@@ -36,6 +41,8 @@ body {
   width: 600px;
   background-color: #fff;
   box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .top {
@@ -45,7 +52,7 @@ body {
   flex-direction: column;
   height: 200px;
   color: #fff;
-  background-color: #00ba40;
+  background-color: var(--main-color);
   text-transform: uppercase;
 }
 
@@ -80,14 +87,14 @@ select {
   font-size: 24px;
   border-radius: 8px;
   color: #fff;
-  background-color: #00ba40;
+  background-color: var(--main-color);
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .count:hover {
-  background-color: rgb(0, 168, 59);
+  background-color: var(--main-color-hover);
 }
 
 .cost-info {

@@ -55,7 +55,7 @@ const stopTimer = () => {
     secondsInput.textContent = "00";
     minutesInput.textContent = "0";
     startBtn.disabled = false;
-    archiveData.classList.remove("hidden");
+    // archiveData.classList.remove("hidden");
   }
 };
 

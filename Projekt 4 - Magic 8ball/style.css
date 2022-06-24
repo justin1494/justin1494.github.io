@@ -11,7 +11,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #094d7e 74%);
+  background-color: rgb(75, 75, 75);
+  color: rgb(200, 200, 200);
 }
 
 .back-to-main {
@@ -36,9 +37,9 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 150px;
   width: 1000px;
   height: 600px;
-  /* background-color: green; */
 }
 
 .info {
@@ -62,16 +63,24 @@ body {
   justify-content: center;
   align-items: center;
   height: 2500px;
-  /* background-color: blue; */
+}
+
+.ball-img:before {
+  position: absolute;
+  content: "Po zadaniu pytania kliknij w bilę!";
+  color: rgba(202, 202, 202, 0.8);
+  font-size: 1.2rem;
+  width: 200px;
+  left: 150px;
+  top: -100px;
 }
 
 .ball-img img {
   position: absolute;
-  /* top: 30px; */
+
   left: 375px;
   width: 250px;
   cursor: pointer;
-  /* background-color: red; */
 }
 
 .question-area {
@@ -107,6 +116,10 @@ body {
 .question-area .error {
   color: #3add8c;
   font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .shake-animaton {

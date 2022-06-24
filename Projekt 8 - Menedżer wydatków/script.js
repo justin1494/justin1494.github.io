@@ -24,21 +24,6 @@ let selectedCategory;
 let moneyArr = [0];
 let sum;
 
-// if (Object.keys(window.localStorage) !== undefined) {
-//   for (let i = 0; i < Object.keys(window.localStorage).length; i++) {
-//     const el = Object.values(window.localStorage)[i];
-//     // console.log(Object.values(window.localStorage));
-//     // incomeSection.appendChild(el);
-//     let newTransaction = document.createElement("div");
-//     newTransaction.innerHTML = el;
-//     console.log(newTransaction);
-//     incomeSection.appendChild(newTransaction);
-//     newTransaction.classList.add("transaction");
-//     newTransaction.setAttribute("id", Object.keys(window.localStorage)[i]);
-
-//   }
-// }
-
 const checkForm = () => {
   if (
     nameInput.value !== "" &&
