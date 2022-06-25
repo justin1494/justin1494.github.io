@@ -87,9 +87,11 @@ h1::before {
 
 .about-img {
   position: absolute;
-  bottom: -220px;
+  top: 340px;
   right: 0px;
-  height: 500px;
+}
+.about-img svg {
+  height: 550px;
 }
 
 .skills {
@@ -322,6 +324,40 @@ h1::before {
 }
 .contact .contact-box img {
   height: 550px;
+}
+
+.laptop {
+  animation: laptop-anime 2s infinite;
+}
+
+@keyframes laptop-anime {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+.body {
+  animation: body-anime 2s infinite;
+}
+
+@keyframes body-anime {
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+.foot {
+  animation: body-anime 2s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

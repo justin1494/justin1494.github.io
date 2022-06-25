@@ -1,0 +1,35 @@
+.laptop {
+  animation: laptop-anime 1s infinite;
+}
+
+@keyframes laptop-anime {
+  0% {
+    transform: translateX(-1px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+.body {
+  animation: body-anime 1s infinite;
+}
+
+@keyframes body-anime {
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1px);
+  }
+}
+
+.test {
+  transform: translateX(100px);
+}
