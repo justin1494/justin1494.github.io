@@ -12,11 +12,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/dc238c17a3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="wrapper">
         <nav>
             <a class='nav-item active' href="#about">About</a>
@@ -25,7 +25,7 @@
             <a class='nav-item' href="#contact">Contact</a>
         </nav>
         <section id="about" class="about">
-            <h1>I'm Web Developer<br>based in Warsaw</h1>
+            <h1 data-value="I'm Marcin Jaskółowski">I'm Web Developer based in Warsaw</h1>
             <div class="about-img">
                 <svg width="656" height="766" viewBox="0 0 656 766" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_4_101)">
@@ -92,6 +92,7 @@
             <div class="skills-title">
                 <h2>My skills</h2>
                 <img src="./img/skills-books-img.svg" alt="ksiązki">
+                <div class="skills-underline"></div>
             </div>
             <div class="skills-display">
                 <img src="./img/skills-man.svg" alt="Człowiek z mapą">
@@ -108,8 +109,33 @@
         </section>
         <section id="projects" class="projects">
             <div class="projects-title ">
-                <img src="./img/project-title-img.svg" alt="ksiązki">
                 <h2>Projects</h2>
+                <img src="./img/project-title-img.svg" alt="ksiązki">
+                <div class="projects-underline"></div>
+            </div>
+            <div class="apps">
+                <div class="app-item"><a>Search engine</a></div>
+                <div class="app-item"><a>Tip calculator</a></div>
+                <div class="app-item"><a>Form validator</a></div>
+                <div class="app-item"><a>Magin 8Ball</a></div>
+                <div class="app-item"><a>Stoper</a></div>
+                <div class="app-item"><a>Notes</a></div>
+                <div class="app-item"><a>Exchange rate</a></div>
+                <div class="app-item"><a>Expense Manager</a></div>
+                <div class="app-item"><a>Advanced timer</a></div>
+                <div class="app-item"><a>ToDo list</a></div>
+
+            </div>
+            <div class="components">
+                <div class="component-item"><a>Search animation</a></div>
+                <div class="component-item"><a>Color board</a></div>
+                <div class="component-item"><a>Form progress bar</a></div>
+                <div class="component-item"><a>Accordion</a></div>
+                <div class="component-item"><a>Carousel</a></div>
+                <div class="component-item"><a>Slides show</a></div>
+                <div class="component-item"><a>Text animation</a></div>
+                <div class="component-item"><a>Draggable items</a></div>
+                <div class="component-item"><a>Picture enlargement</a></div>
             </div>
 
         </section>
@@ -131,10 +157,26 @@
                 <img src="./img/contact-img.svg" alt="Machający człowiek">
             </div>
         </section>
+        <svg class="page-line" width="581" height="3585" viewBox="0 0 581 3585" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M225.5 1C225.5 1 233.532 26.4763 241.5 41.5C250.816 59.0666 258.763 67.3274 271 83C287.855 104.587 301.829 113.038 317.5 135.5C341.143 169.39 349.011 192.272 362 231.5C371.409 259.914 380.153 276.069 380 306C379.823 340.6 359.971 356.758 355 391C349.951 425.783 348.897 446.387 355 481C361.524 518.001 371.518 537.743 389 571C401.878 595.498 412.675 607.129 427.5 630.5C439.951 650.128 447.72 660.677 459 681C473.158 706.507 484.85 719.983 491 748.5C496.681 774.841 497.517 791.354 491 817.5C484.536 843.435 476.404 857.715 459 878C439.178 901.104 421.005 906.675 395 922.5C359.566 944.063 331.999 943.608 300 970C270.852 994.041 259.564 1013.48 239.5 1045.5C225.031 1068.59 216.843 1081.9 207.5 1107.5C193.002 1147.22 194.343 1172.35 191 1214.5C187.418 1259.66 187.628 1285.32 191 1330.5C194.277 1374.4 194.953 1399.81 207.5 1442C220.126 1484.46 236.443 1504.78 255 1545C270.226 1578 279.431 1596.2 294 1629.5C312.009 1670.66 318.753 1695.17 337.5 1736C355.611 1775.44 384.106 1791.77 388 1835C390.647 1864.38 383.014 1880.97 375.5 1909.5C365.544 1947.3 345.404 1964.03 338.5 2002.5C332.396 2036.52 333.354 2056.82 338.5 2091C344.09 2128.13 365.689 2145.03 368 2182.5C370.429 2221.89 362.194 2244.78 347.748 2281.5C330.559 2325.19 314.937 2348.79 281.748 2382C243.885 2419.89 206.68 2420.35 165 2454C132.125 2480.54 112.853 2495.83 88 2530C61.6486 2566.23 45.0528 2585.21 28 2626C12.9111 2662.09 8.2792 2685.73 3.00004 2723C-0.313609 2746.39 1.29941 2759.93 3.00004 2783.5C4.80486 2808.51 2.76767 2823.89 12.5 2847C20.5097 2866.02 28.7164 2875.14 42.5 2890.5C64.8041 2915.35 81.6795 2925.97 111.5 2941C149.017 2959.9 174.297 2960.31 215.5 2968.5C267.95 2978.93 298.31 2978.96 351.5 2984.5C388.566 2988.36 415.932 2993.36 454 3009C479.211 3019.36 494.56 3024.55 515.5 3042C535.765 3058.89 546.102 3070.96 558 3094.5C569.665 3117.58 571.286 3132.91 575 3158.5C579.627 3190.38 581.61 3209.47 575 3241C567.563 3276.48 557.637 3293.06 540.5 3325C527.755 3348.76 522.866 3365.62 506.5 3388.5C487.3 3415.34 472.638 3427.62 447.5 3449C411.111 3479.95 394 3489 351.5 3521C309 3553 273.5 3561.67 240.5 3583.5"
+                stroke="#9F9F9F" stroke-width="2" />
+        </svg>
     </div>
 
 
+
+
+
+
+
     <script src="scrollSpy.js" async defer></script>
+    <script src="pageLineAnimation.js" async defer></script>
+    <script src="animationH1.js" async defer></script>
+    <script src="uderlineSlideInOut.js" type="module" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </body>
 
 </html>
