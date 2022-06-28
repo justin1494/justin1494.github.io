@@ -39,6 +39,7 @@ body {
   width: 1200px;
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  // border: white 2px solid;
 }
 
 h2 {
@@ -53,7 +54,7 @@ nav {
   justify-content: center;
   align-items: center;
   top: -60px;
-  padding: 15px 0;
+  padding: 25px 0;
   gap: 100px;
   width: 100%;
   background-color: rgba(37, 37, 37, 1);
@@ -75,6 +76,122 @@ nav {
 }
 
 .about {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 900px;
+  padding-top: 150px;
+  margin-bottom: 100px;
+
+  .about-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 30px;
+
+    img {
+      height: 90px;
+      z-index: 100;
+      opacity: 0;
+    }
+
+    h2 {
+      opacity: 0;
+    }
+
+    .about-underline {
+      position: absolute;
+      width: 320px;
+      height: 40px;
+      left: -970px;
+      top: 70px;
+      opacity: 0;
+      background-color: $title-after-color;
+      box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.2px;
+      content: "";
+    }
+  }
+
+  .chemistry {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 150px;
+    margin-bottom: 100px;
+
+    img {
+      width: 100%;
+      padding-left: 10px;
+      opacity: 0;
+    }
+
+    .under-chemistry {
+      position: absolute;
+      width: 217px;
+      height: 184px;
+      top: 250px;
+      left: -216px;
+      background-color: rgb(50, 50, 50);
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .chemistry-text {
+      width: 530px;
+      opacity: 0;
+
+      p {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .programming {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    img {
+      width: 90%;
+      padding-right: 10px;
+      opacity: 0;
+    }
+
+    .under-programming {
+      position: absolute;
+      width: 289px;
+      height: 146px;
+      top: 810px;
+      right: -200px;
+      background-color: rgb(50, 50, 50);
+      z-index: -1;
+      opacity: 0;
+    }
+
+    .programming-text {
+      width: 500px;
+      opacity: 0;
+
+      p {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+.hero {
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -103,10 +220,10 @@ h1::before {
   bottom: 110px;
 }
 
-.about-img {
+.hero-img {
   position: absolute;
   top: 340px;
-  right: 400px;
+  right: 300px;
   opacity: 0;
 
   svg {
@@ -161,6 +278,7 @@ h1::before {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin-top: 20px;
 
     img {
       position: absolute;
@@ -289,7 +407,8 @@ h1::before {
   flex-direction: column;
   width: 100%;
   height: 1000px;
-  padding-top: 5 0px;
+  padding-top: 70px;
+  margin-top: -60px;
 
   .projects-title {
     position: relative;
@@ -335,7 +454,7 @@ h1::before {
     flex-wrap: wrap;
     gap: 30px;
     left: 20px;
-    top: 25%;
+    top: 30%;
 
     .app-item {
       display: flex;
@@ -353,12 +472,12 @@ h1::before {
       border-radius: 6px;
       cursor: pointer;
       z-index: 10;
-      transform: skew(-5deg);
       transition: all 0.5s;
       box-shadow: 5px 5px rgb(0, 0, 0);
+      opacity: 0;
 
       &:hover {
-        transform: scale(1.1) skew(-5deg);
+        transform: scale(1.1) skew(5deg);
         background-color: #7e7e7e;
         color: white;
       }
@@ -372,7 +491,7 @@ h1::before {
     flex-wrap: wrap;
     gap: 30px;
     right: 0;
-    top: 40%;
+    top: 55%;
 
     .component-item {
       display: flex;
@@ -390,9 +509,9 @@ h1::before {
       border-radius: 6px;
       cursor: pointer;
       z-index: 10;
-      transform: skew(-5deg);
       transition: all 0.5s;
       box-shadow: 5px 5px rgb(0, 0, 0);
+      opacity: 0;
 
       &:hover {
         transform: scale(1.1) skew(-5deg);
@@ -421,9 +540,15 @@ h1::before {
     gap: 30px;
     padding-bottom: 100px;
 
-    img {
+    .post-box {
       height: 90px;
-      z-index: 100;
+      z-index: 1000;
+
+      &:hover {
+        .post-arrow {
+          transform: rotate(270deg) translateX(-93px) translateY(20px);
+        }
+      }
     }
 
     &::after {
@@ -490,8 +615,8 @@ h1::before {
 }
 .page-line {
   position: absolute;
-  top: 75px;
-  left: 250px;
+  top: 65px;
+  left: 230px;
 }
 
 // -------------------- ANIMATIONS -----------------------------
