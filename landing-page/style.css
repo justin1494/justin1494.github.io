@@ -410,7 +410,7 @@ h1::before {
   font-size: 18px;
   line-height: 26px;
   padding: 0 2px;
-  background-color: #ffffff;
+  background-color: #efefef;
   color: black;
   border-radius: 6px;
   cursor: pointer;
@@ -444,7 +444,7 @@ h1::before {
   font-size: 18px;
   line-height: 26px;
   padding: 0 2px;
-  background-color: #ffffff;
+  background-color: #efefef;
   color: black;
   border-radius: 6px;
   cursor: pointer;
@@ -547,7 +547,7 @@ h1::before {
   border: none;
   border-radius: 6px;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #efefef;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }

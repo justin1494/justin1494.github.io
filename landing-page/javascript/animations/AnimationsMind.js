@@ -114,7 +114,7 @@ const observerProjects = new IntersectionObserver(
     handleProjecAnimations(entries);
   },
   {
-    threshold: 0.6,
+    threshold: 0.5,
   }
 );
 
