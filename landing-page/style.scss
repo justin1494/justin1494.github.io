@@ -540,9 +540,14 @@ h1::before {
     gap: 30px;
     padding-bottom: 100px;
 
-    .post-box {
+    h2 {
+      opacity: 0;
+    }
+
+    svg {
       height: 90px;
       z-index: 1000;
+      opacity: 0;
 
       &:hover {
         .post-arrow {
@@ -551,12 +556,12 @@ h1::before {
       }
     }
 
-    &::after {
+    .contact-underline {
       position: absolute;
       width: 500px;
       height: 40px;
       top: 70px;
-      transform: skewX(-40deg);
+      right: 930px;
       background-color: $title-after-color;
       box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.2px;
       content: "";
@@ -564,16 +569,23 @@ h1::before {
   }
 
   .contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100%;
     gap: 150px;
+    z-index: 100;
+
+    .contact-animation {
+      opacity: 0;
+    }
 
     .contact-form {
+      position: absolute;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+      top: 70px;
+      left: 150px;
 
       input,
       textarea {
@@ -589,6 +601,7 @@ h1::before {
 
         &::placeholder {
           color: white;
+          opacity: 0.5;
           font-family: "Montserrat", sans-serif;
         }
       }
@@ -600,9 +613,30 @@ h1::before {
       label {
         padding-bottom: 10px;
       }
+
+      .contact-button {
+        width: 100px;
+        height: 35px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        background-color: #fff;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #919191;
+          color: white;
+          box-shadow: 4px 4px black;
+        }
+      }
     }
     img {
+      position: absolute;
       height: 550px;
+      right: 0;
+      opacity: 0;
     }
   }
 }

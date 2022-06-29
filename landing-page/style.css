@@ -477,34 +477,44 @@ h1::before {
   gap: 30px;
   padding-bottom: 100px;
 }
-.contact .contact-title .post-box {
+.contact .contact-title h2 {
+  opacity: 0;
+}
+.contact .contact-title svg {
   height: 90px;
   z-index: 1000;
+  opacity: 0;
 }
-.contact .contact-title .post-box:hover .post-arrow {
+.contact .contact-title svg:hover .post-arrow {
   transform: rotate(270deg) translateX(-93px) translateY(20px);
 }
-.contact .contact-title::after {
+.contact .contact-title .contact-underline {
   position: absolute;
   width: 500px;
   height: 40px;
   top: 70px;
-  transform: skewX(-40deg);
+  right: 930px;
   background-color: #373737;
   box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.2px;
   content: "";
 }
 .contact .contact-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 100%;
   gap: 150px;
+  z-index: 100;
+}
+.contact .contact-box .contact-animation {
+  opacity: 0;
 }
 .contact .contact-box .contact-form {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  top: 70px;
+  left: 150px;
 }
 .contact .contact-box .contact-form input,
 .contact .contact-box .contact-form textarea {
@@ -521,6 +531,7 @@ h1::before {
 .contact .contact-box .contact-form input::placeholder,
 .contact .contact-box .contact-form textarea::placeholder {
   color: white;
+  opacity: 0.5;
   font-family: "Montserrat", sans-serif;
 }
 .contact .contact-box .contact-form textarea {
@@ -529,8 +540,27 @@ h1::before {
 .contact .contact-box .contact-form label {
   padding-bottom: 10px;
 }
+.contact .contact-box .contact-form .contact-button {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.contact .contact-box .contact-form .contact-button:hover {
+  background-color: #919191;
+  color: white;
+  box-shadow: 4px 4px black;
+}
 .contact .contact-box img {
+  position: absolute;
   height: 550px;
+  right: 0;
+  opacity: 0;
 }
 
 .laptop {

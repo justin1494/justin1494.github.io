@@ -182,7 +182,6 @@
         <section id="contact" class="contact">
             <div class="contact-title ">
                 <h2>Leave me a message!</h2>
-
                 <svg class="post-box" width="91" height="105" viewBox="0 0 91 105" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -196,17 +195,18 @@
                         d="M42.8125 1.42505H58.7375V37.8688H55.6026L55.3523 11.2833L42.8125 11.7055V1.42505Z"
                         fill="black" stroke="#151515" stroke-width="0.91875" />
                 </svg>
-
+                <div class="contact-underline"></div>
             </div>
             <div class="contact-box">
                 <form class="contact-form" action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name...">
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Your e-mail...">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message..."
+                    <label class="contact-animation" for="name">Name</label>
+                    <input class="contact-animation" type="text" id="name" name="name" placeholder="Your name...">
+                    <label class="contact-animation" for="email">E-mail</label>
+                    <input class="contact-animation" type="text" id="email" name="email" placeholder="Your e-mail...">
+                    <label class="contact-animation" for="message">Message</label>
+                    <textarea class="contact-animation" id="message" name="message" placeholder="Write your message..."
                         style="height:200px"></textarea>
+                    <button class="contact-animation contact-button">Submit</button>
                 </form>
                 <img src="./img/contact-img.svg" alt="Machający człowiek">
             </div>
@@ -230,7 +230,7 @@
     <!-- <script src="./javascript/scrollSpy.js" async defer></script> -->
     <script src="./javascript/pageLineAnimation.js" async defer></script>
     <script src="./javascript/animationH1.js" async defer></script>
-    <script src="./javascript/uderlineSlideInOut.js" type="module" async defer></script>
+    <script src="./javascript/animations/AnimationsMind.js" type="module" async defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </body>
