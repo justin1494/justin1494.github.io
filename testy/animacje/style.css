@@ -1,35 +1,41 @@
-.laptop {
-  animation: laptop-anime 1s infinite;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes laptop-anime {
-  0% {
-    transform: translateX(-1px);
-  }
-  50% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-1px);
-  }
+body {
+  margin: 80px;
+  font-size: 36px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
-.body {
-  animation: body-anime 1s infinite;
+table {
+  border-spacing: 0;
 }
 
-@keyframes body-anime {
-  0% {
-    transform: translateY(-1px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-1px);
-  }
+table,
+td,
+th {
+  border: 1px solid black;
 }
 
-.test {
-  transform: translateX(100px);
+td,
+th {
+  padding: 5px 20px;
+}
+
+thead {
+  background-color: tomato;
+}
+
+tbody {
+  background-color: #fff;
+}
+
+tfoot {
+  background-color: royalblue;
 }
