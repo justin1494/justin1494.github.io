@@ -10,7 +10,7 @@ const getItemLocalStorage = () => {
   advice.textContent = `${adviceText}`;
 };
 
-// getItemLocalStorage();
+getItemLocalStorage();
 
 const getAdvice = () => {
   fetch("https://api.adviceslip.com/advice")
