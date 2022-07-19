@@ -34,14 +34,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
   max-width: 600px;
   max-height: 400px;
-  padding: 20px 40px 40px;
+  padding: 1.5em;
   background-color: $dark-grayish-blue;
   border-radius: 10px;
 
   &__title {
+    margin: 2em 0;
     color: $neon-green;
     letter-spacing: 0.3em;
   }
@@ -52,7 +52,7 @@ body {
   }
 
   &__divider {
-    margin-top: 1em;
+    margin: 2em 0 2.5em;
     max-width: 100%;
   }
 
@@ -74,5 +74,3 @@ body {
     }
   }
 }
-
-
