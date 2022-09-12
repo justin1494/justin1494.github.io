@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
   }
 
+  body {
+    overflow: none;
+  }
+
   
 
 

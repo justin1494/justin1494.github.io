@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HomeCardInner from "./HomeCardInner";
-import AboutCardInner from "./AboutCardInner";
+import AboutCardInner from "./AboutCard";
 
 // styles
 import styled from "styled-components";
