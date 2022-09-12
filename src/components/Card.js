@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HomeCardInner from "./HomeCardInner";
+import AboutCardInner from "./AboutCardInner";
 
 // styles
 import styled from "styled-components";
 
 const Card = () => {
+  const allCards = [<HomeCardInner />, <AboutCardInner />];
+
+  const [card, setCard] = useState(0);
+
+  const keyDownHandler = (e) => {
+    if (e.key === "ArrowUp") {
+      setCard(1);
+    } else if (e.key === "ArrowDown") {
+      setCard(0);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("keydown", keyDownHandler, true);
+  }, []);
+
   return (
-    <CardStyled>
-      <HomeCardInner />
-    </CardStyled>
+    <>
+      <CardStyled>{allCards[card]}</CardStyled>
+    </>
   );
 };
 

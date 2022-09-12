@@ -2,11 +2,11 @@ import React from "react";
 import Card from "./components/Card";
 import GlobalStyle from "./globalStyles";
 
-
 // sstyles
 import styled from "styled-components";
 
 function App() {
+
   return (
     <AppStyled>
       <GlobalStyle />
