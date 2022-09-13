@@ -4,7 +4,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // animations
-import { fadeInUpBig } from "react-animations";
+import { bounceInUp } from "react-animations";
 
 const ContactCard = () => {
   return (
@@ -21,7 +21,7 @@ const ContactCard = () => {
   );
 };
 
-const Animation = keyframes`${fadeInUpBig}`;
+const Animation = keyframes`${bounceInUp}`;
 
 const CardStyled = styled.div`
   display: flex;

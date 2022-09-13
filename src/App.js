@@ -6,6 +6,8 @@ import ProjectsCard from "./components/ProjectsCard";
 import ContactCard from "./components/ContactCard";
 import SkillsCard from "./components/SkillsCard";
 
+import BackgroundImage from "./img/bg2.jpg";
+
 // sstyles
 import styled from "styled-components";
 
@@ -49,6 +51,10 @@ const AppStyled = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-image: url(${BackgroundImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 `;
 
 export default App;
