@@ -14,18 +14,34 @@ const GlobalStyle = createGlobalStyle`
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  animation: 1s arrowAnimation;
+  animation: 0.5s startAnimation;
+  animation-iteration-count: 1;
 
-  @keyframes arrowAnimation {
+  @keyframes startAnimation {
     from {
-opacity: 1;
-scale: 0;
-    } to {
-opacity: 1;
-scale: 1;
+        opacity: 0;
+        scale: 0;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+  }
+
+}
+.animated {
+    animation: 0.3s arrowAnimation forwards;
+    @keyframes arrowAnimation {
+      from {
+        opacity: 1;
+        scale: 1;
+      }
+      to {
+        opacity: 0;
+        scale: 0;
+      }
     }
   }
-}
 `;
 
 export default GlobalStyle;

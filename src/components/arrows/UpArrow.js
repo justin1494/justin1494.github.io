@@ -3,13 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-import { v4 as uuidv4 } from "uuid";
 
-const UpArrow = () => {
+const UpArrow = ({ currentCard }) => {
+  let animation = "";
+
+  if (currentCard === "skills") {
+    animation = "animated";
+  }
+
   return (
-    <UpArrowStyled className="up-arrow arrow" key={uuidv4()}>
+    <UpArrowStyled className={`up-arrow arrow ${animation}`}>
       <FontAwesomeIcon icon={faAnglesUp} />
-      <p>Contact </p>
+      <p>My skills</p>
     </UpArrowStyled>
   );
 };

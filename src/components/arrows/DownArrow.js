@@ -3,13 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-import { v4 as uuidv4 } from "uuid";
+const DownArrow = ({currentCard}) => {
 
-const DownArrow = () => {
+  let animation = "";
+
+  if (currentCard === "contact") {
+    animation = "animated";
+  }
+
   return (
-    <DownArrowStyled className="down-arrow arrow" key={uuidv4()}>
+    <DownArrowStyled className={`down-arrow arrow ${animation}`} >
       <FontAwesomeIcon icon={faAnglesDown} />
-      <p>My skills</p>
+      <p>Contact</p>
     </DownArrowStyled>
   );
 };

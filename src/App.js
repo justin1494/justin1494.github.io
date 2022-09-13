@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import GlobalStyle from "./globalStyles";
 import HomeCard from "./components/cards/HomeCard";
 import AboutCard from "./components/cards/AboutCard";
 import ProjectsCard from "./components/cards/ProjectsCard";
 import ContactCard from "./components/cards/ContactCard";
 import SkillsCard from "./components/cards/SkillsCard";
-import CustomThing from "./components/CusomThing";
 
 // arrows
 import RightArrow from "./components/arrows/RightArrow";
@@ -18,10 +17,11 @@ import BackgroundImage from "./img/bg2.jpg";
 // styles
 import styled from "styled-components";
 
-// uuid
-import { v4 as uuidv4 } from "uuid";
-
 function App() {
+  // states
+  const [card, setCard] = useState(0);
+  const [currentCard, setCurrentCard] = useState("home");
+
   const allCards = [
     <HomeCard />,
     <ProjectsCard />,
@@ -30,24 +30,19 @@ function App() {
     <AboutCard />,
   ];
 
-  const [card, setCard] = useState(0);
-  const [mousePosition, setMousePosition] = useState({});
-  const [arrows, setArrows] = useState([
-    <RightArrow />,
-    <DownArrow />,
-    <UpArrow />,
-    <LeftArrow />,
-  ]);
-
   const keyDownHandler = (e) => {
     if (e.key === "ArrowRight") {
       setCard(1);
+      setCurrentCard("projects");
     } else if (e.key === "ArrowDown") {
       setCard(2);
+      setCurrentCard("contact");
     } else if (e.key === "ArrowUp") {
       setCard(3);
+      setCurrentCard("skills");
     } else if (e.key === "ArrowLeft") {
       setCard(4);
+      setCurrentCard("about");
     }
   };
   useEffect(() => {
@@ -56,29 +51,20 @@ function App() {
 
   useEffect(() => {
     if (card === 1) {
-      setArrows([<LeftArrow />, <UpArrow />, <DownArrow />]);
     } else if (card === 2) {
-      setArrows([<RightArrow />, <LeftArrow />, <UpArrow />]);
     } else if (card === 3) {
-      setArrows([<RightArrow />, <LeftArrow />, <DownArrow />]);
     } else if (card === 4) {
-      setArrows([<RightArrow />, <DownArrow />, <UpArrow />]);
     }
   }, [card]);
 
-  const thingMoveHandler = (e) => {
-    setMousePosition({
-      mouseX: e.clientX,
-      mouseY: e.clientY,
-    });
-  };
-
   return (
-    <AppStyled className="app" onMouseMove={thingMoveHandler}>
+    <AppStyled className="app">
       <GlobalStyle />
-      <CustomThing mousePosition={mousePosition} />
       {allCards[card]}
-      {arrows}
+      <RightArrow currentCard={currentCard} />
+      <DownArrow currentCard={currentCard} />
+      <UpArrow currentCard={currentCard} />
+      <LeftArrow currentCard={currentCard} />
     </AppStyled>
   );
 }

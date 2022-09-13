@@ -3,11 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-import { v4 as uuidv4 } from "uuid";
 
-const RightArrow = () => {
+const RightArrow = ({ currentCard }) => {
+  let animation = "";
+
+  if (currentCard === "projects") {
+    animation = "animated";
+  }
+
   return (
-    <RightArrowStyled className="right-arrow arrow" key={uuidv4()}>
+    <RightArrowStyled
+      className={`right-arrow arrow ${animation}`}>
       <FontAwesomeIcon icon={faAnglesRight} />
       <p>Projects</p>
     </RightArrowStyled>
