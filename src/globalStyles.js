@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   gap: 20px;
   animation: 0.5s startAnimation;
-  animation-iteration-count: 1;
 
   @keyframes startAnimation {
     from {

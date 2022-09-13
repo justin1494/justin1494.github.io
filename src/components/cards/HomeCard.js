@@ -1,11 +1,13 @@
 import React from "react";
 
-
 // styles
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 // imgs
 import arrowsImg from "../../img/arrows.svg";
+
+// animaitons
+import { zoomIn } from "react-animations";
 
 const HomeCard = () => {
   return (
@@ -27,6 +29,7 @@ const HomeCard = () => {
   );
 };
 
+const Animation = keyframes`${zoomIn}`;
 
 const CardStyled = styled.div`
   display: flex;
@@ -39,9 +42,9 @@ const CardStyled = styled.div`
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    z-index: 1;
+  z-index: 1;
+  animation: 1s ${Animation};
 `;
-
 
 const HomeCardStyled = styled.div`
   display: flex;

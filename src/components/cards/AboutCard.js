@@ -4,7 +4,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // animations
-import {  bounceInLeft  } from "react-animations";
+import {  bounceInLeft } from "react-animations";
 
 const AboutCard = () => {
   return (
@@ -20,6 +20,8 @@ const AboutCard = () => {
     </CardStyled>
   );
 };
+
+
 
 const Animation = keyframes`${ bounceInLeft }`;
 

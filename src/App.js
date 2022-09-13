@@ -49,13 +49,13 @@ function App() {
     document.addEventListener("keydown", keyDownHandler, true);
   }, []);
 
-  useEffect(() => {
-    if (card === 1) {
-    } else if (card === 2) {
-    } else if (card === 3) {
-    } else if (card === 4) {
-    }
-  }, [card]);
+  // useEffect(() => {
+  //   if (card === 1) {
+  //   } else if (card === 2) {
+  //   } else if (card === 3) {
+  //   } else if (card === 4) {
+  //   }
+  // }, [card]);
 
   return (
     <AppStyled className="app">
