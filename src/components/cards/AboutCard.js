@@ -15,9 +15,9 @@ const AboutCard = () => {
           <div className="underline"></div>
         </div>
         <div className="main-text">
-          <p>I am based in Warsaw Poland</p>
-          <p>Currently I am in my final year of PhD in chemistry</p>
-          <p>I am a self thought JS/React developer</p>
+          <p>I am based in <span>Warsaw, Poland</span></p>
+          <p>Currently I am in my final year of my <span>PhD </span>at the faculty of chemistry at the <span>University of Warsaw</span></p>
+          <p>For the last <span>year and a half</span>, I have been following the path to becoming a <span> react front-end developer</span></p>
         </div>
       </AboutCardStyled>
     </CardStyled>
@@ -56,12 +56,18 @@ const AboutCardStyled = styled.div`
     align-items: flex-start;
     flex-direction: column;
     gap: 25px;
+    margin-top: 40px;
     width: 100%;
     color: #3a3a3a;
     font-size: 20px;
 
+    p{
+      line-height: 30px;
+    }
+
     span {
       font-weight: bold;
+      color: #aa4141;
     }
   }
 

@@ -1,8 +1,9 @@
 import { createGlobalStyle, keyframes } from "styled-components";
 
-import { fadeInUp } from "react-animations";
+import { fadeInUp, fadeInDown } from "react-animations";
 
 const UnderlineAnimation = keyframes`${fadeInUp}`;
+const HomeMainAnimations = keyframes`${fadeInDown}`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -15,9 +16,20 @@ const GlobalStyle = createGlobalStyle`
   .title, .controls {
     position: relative;
     margin-top: 10px;
-    opacity: 0;
+   
+  }
+
+    .title,  .controls {
+      opacity: 0;
     animation: 700ms ${UnderlineAnimation} forwards;
     animation-delay: 600ms;
+    }
+
+    .main {
+      opacity: 0;
+      animation: 700ms ${HomeMainAnimations} forwards;
+    animation-delay: 600ms;
+    }
 
 
     h1 {

@@ -5,6 +5,7 @@ import styled, { keyframes } from "styled-components";
 
 // imgs
 import arrowsImg from "../../img/arrows.svg";
+import avatar from "../../img/MJ_zdjęcie.jfif";
 
 // animaitons
 import { zoomIn } from "react-animations";
@@ -13,12 +14,19 @@ const HomeCard = () => {
   return (
     <CardStyled>
       <HomeCardStyled>
-        <div className="main-text">
-          <p>Hello to my portfolio page!</p>
-          <p>
-            My name is <span>Marcin Jaskółowski</span>
-          </p>
-          <p>I am a self thought JS/React developer</p>
+        <div className="main">
+          <img
+            className="main__img"
+            src={avatar}
+            alt="marcin jaskółowski avatar"
+          />
+          <div className="main__text">
+            <p>Hello to <span>my portfolio</span> page!</p>
+            <p>
+              My name is <span>Marcin Jaskółowski</span>
+            </p>
+            <p>I am a self-taught JS/React developer</p>
+          </div>
         </div>
         <div className="controls">
           <img src={arrowsImg} alt="arrows" />
@@ -55,18 +63,30 @@ const HomeCardStyled = styled.div`
   width: 80%;
   height: 80%;
 
-  .main-text {
+  .main {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 25px;
-    margin-top: 30px;
-    width: 100%;
-    font-size: 20px;
+    align-items: center;
+    gap: 30px;
 
-    span {
-      font-weight: bold;
+    &__img {
+      width: 200px;
+      border-radius: 50%;
+    }
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+
+      span {
+        font-weight: bold;
+        color: #aa4141;
+      }
     }
   }
 
@@ -75,6 +95,11 @@ const HomeCardStyled = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 40px;
+    
+    img {
+      width: 120px;
+    }
 
     p {
       font-style: italic;
