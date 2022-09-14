@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
   }
 
-  .title {
+  .title, .controls {
     position: relative;
     opacity: 0;
     animation: 1s ${UnderlineAnimation} forwards;
