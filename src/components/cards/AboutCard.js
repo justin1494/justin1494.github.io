@@ -4,13 +4,16 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // animations
-import {  bounceInLeft } from "react-animations";
+import { bounceInLeft } from "react-animations";
 
 const AboutCard = () => {
   return (
     <CardStyled>
       <AboutCardStyled>
-        <h1 className="title">About</h1>
+        <div className="title">
+          <h1>About</h1>
+          <div className="underline"></div>
+        </div>
         <div className="main-text">
           <p>I am based in Warsaw Poland</p>
           <p>Currently I am in my final year of PhD in chemistry</p>
@@ -21,9 +24,7 @@ const AboutCard = () => {
   );
 };
 
-
-
-const Animation = keyframes`${ bounceInLeft }`;
+const Animation = keyframes`${bounceInLeft}`;
 
 const CardStyled = styled.div`
   display: flex;

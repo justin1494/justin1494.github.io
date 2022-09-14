@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import GlobalStyle from "./globalStyles";
 import HomeCard from "./components/cards/HomeCard";
 import AboutCard from "./components/cards/AboutCard";

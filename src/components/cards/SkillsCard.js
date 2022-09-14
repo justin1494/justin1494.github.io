@@ -10,7 +10,10 @@ const SkillsCard = () => {
   return (
     <CardStyled>
       <SkillsCardStyled>
-        <h1 className="title">Skills</h1>
+        <div className="title">
+          <h1>Skills</h1>
+          <div className="underline"></div>
+        </div>
         <div className="main-text">
           <p>I am based in Warsaw Poland</p>
           <p>Currently I am in my final year of PhD in chemistry</p>
@@ -21,7 +24,7 @@ const SkillsCard = () => {
   );
 };
 
-const Animation = keyframes`${bounceInDown }`;
+const Animation = keyframes`${bounceInDown}`;
 
 const CardStyled = styled.div`
   display: flex;

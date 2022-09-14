@@ -1,4 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
+
+import { fadeInUp } from "react-animations";
+
+const UnderlineAnimation = keyframes`${fadeInUp}`;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -7,6 +11,37 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
   }
+
+  .title {
+    position: relative;
+    opacity: 0;
+    animation: 1s ${UnderlineAnimation} forwards;
+    animation-delay: 900ms;
+
+    h1 {
+      position: relative;
+      z-index: 1;
+    }
+
+    .underline {
+      position: absolute;
+      bottom: -5px;
+      left: -10%;
+      width: 120%;
+      height: 50%;
+      background-color: rgb(200, 10, 10, 0.5);
+      opacity: 0;
+    animation: 1s ${UnderlineAnimation} forwards;
+    animation-delay: 900ms;;
+    }
+  }
+
+  .main-text {
+    opacity: 0;
+    animation: 1s ${UnderlineAnimation} forwards;
+    animation-delay: 900ms;
+  }
+
 .arrow {
   position: absolute;
   display: flex;

@@ -10,7 +10,10 @@ const ContactCard = () => {
   return (
     <CardStyled>
       <ContactCardStyled>
-        <h1 className="title">Contact</h1>
+      <div className="title">
+          <h1>Contact</h1>
+          <div className="underline"></div>
+        </div>
         <div className="main-text">
           <p>I am based in Warsaw Poland</p>
           <p>Currently I am in my final year of PhD in chemistry</p>
@@ -34,6 +37,7 @@ const CardStyled = styled.div`
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    overflow: hidden;
   animation: 1s ${Animation};
 `;
 

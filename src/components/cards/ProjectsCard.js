@@ -4,13 +4,16 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 // animations
-import { bounceInRight  } from "react-animations";
+import { bounceInRight } from "react-animations";
 
 const ProjectsCard = () => {
   return (
     <CardStyled>
       <ProjectsCardStyled>
-        <h1 className="title">Projects</h1>
+        <div className="title">
+          <h1>Projects</h1>
+          <div className="underline"></div>
+        </div>
         <div className="main-text">
           <p>I am based in Warsaw Poland</p>
           <p>Currently I am in my final year of PhD in chemistry</p>
@@ -21,7 +24,7 @@ const ProjectsCard = () => {
   );
 };
 
-const Animation = keyframes`${bounceInRight }`;
+const Animation = keyframes`${bounceInRight}`;
 
 const CardStyled = styled.div`
   display: flex;
@@ -59,17 +62,6 @@ const ProjectsCardStyled = styled.div`
 
     span {
       font-weight: bold;
-    }
-  }
-
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    p {
-      font-style: italic;
     }
   }
 `;
