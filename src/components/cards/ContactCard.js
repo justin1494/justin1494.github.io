@@ -6,18 +6,54 @@ import styled, { keyframes } from "styled-components";
 // animations
 import { bounceInUp } from "react-animations";
 
+// font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const ContactCard = () => {
   return (
     <CardStyled>
       <ContactCardStyled>
-      <div className="title">
+        <div className="title">
           <h1>Contact</h1>
           <div className="underline"></div>
         </div>
         <div className="main-text">
-          <p>I am based in Warsaw Poland</p>
-          <p>Currently I am in my final year of PhD in chemistry</p>
-          <p>I am a self thought JS/React developer</p>
+          <div className="contact">
+            <div className="contact__icon">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </div>
+            <a
+              href="https://www.linkedin.com/in/marcin-jask%C3%B3%C5%82owski-903869117/"
+              target="_blank"
+              className="contact__text"
+              rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+          <div className="contact">
+            <div className="contact__icon">
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
+            <a
+              href="https://github.com/justin1494"
+              target="_blank"
+              className="contact__text"
+              rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+          <div className="contact">
+            <div className="contact__icon">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </div>
+            <a
+              href="mailto:m.jaskolowski1994@gmail.com"
+              className="contact__text">
+              m.jaskolowski1994@gmail.com
+            </a>
+          </div>
         </div>
       </ContactCardStyled>
     </CardStyled>
@@ -37,8 +73,8 @@ const CardStyled = styled.div`
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    overflow: hidden;
-  animation: 1s ${Animation};
+  overflow: hidden;
+  animation: 800ms ${Animation};
 `;
 
 const ContactCardStyled = styled.div`
@@ -57,12 +93,29 @@ const ContactCardStyled = styled.div`
     flex-direction: column;
     gap: 25px;
     width: 100%;
-    margin-top: 50px;
+    margin-left: 100px;
     color: #3a3a3a;
     font-size: 20px;
 
-    span {
-      font-weight: bold;
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      &__icon {
+        font-size: 40px;
+      }
+
+      &__text {
+        text-decoration: none;
+        color: #8d5151;
+        font-size: 24px;
+
+        &:hover {
+          color: #ba9d9d;
+        }
+      }
     }
   }
 

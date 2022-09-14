@@ -37,7 +37,8 @@ const CardStyled = styled.div`
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  animation: 1s ${Animation};
+    overflow: hidden;
+  animation: 800ms ${Animation};
 `;
 
 const AboutCardStyled = styled.div`
@@ -56,7 +57,6 @@ const AboutCardStyled = styled.div`
     flex-direction: column;
     gap: 25px;
     width: 100%;
-    margin-top: 50px;
     color: #3a3a3a;
     font-size: 20px;
 

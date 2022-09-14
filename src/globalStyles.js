@@ -14,13 +14,18 @@ const GlobalStyle = createGlobalStyle`
 
   .title, .controls {
     position: relative;
+    margin-top: 10px;
     opacity: 0;
-    animation: 1s ${UnderlineAnimation} forwards;
-    animation-delay: 900ms;
+    animation: 700ms ${UnderlineAnimation} forwards;
+    animation-delay: 600ms;
+
 
     h1 {
       position: relative;
       z-index: 1;
+      color: #2d2d2d;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 26px;
     }
 
     .underline {
@@ -31,15 +36,16 @@ const GlobalStyle = createGlobalStyle`
       height: 50%;
       background-color: rgb(200, 10, 10, 0.5);
       opacity: 0;
-    animation: 1s ${UnderlineAnimation} forwards;
-    animation-delay: 900ms;;
+    animation: 700ms ${UnderlineAnimation} forwards;
+    animation-delay: 600ms;
     }
   }
 
   .main-text {
+    margin-top: 60px;
     opacity: 0;
-    animation: 1s ${UnderlineAnimation} forwards;
-    animation-delay: 900ms;
+    animation: 600ms ${UnderlineAnimation} forwards;
+    animation-delay: 700ms;
   }
 
 .arrow {
@@ -50,6 +56,14 @@ const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   gap: 20px;
   animation: 0.5s startAnimation;
+
+  p{
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  svg {
+    font-size: 30px;
+  }
 
   @keyframes startAnimation {
     from {

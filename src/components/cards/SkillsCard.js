@@ -6,6 +6,18 @@ import styled, { keyframes } from "styled-components";
 // animations
 import { bounceInDown } from "react-animations";
 
+// font awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faBootstrap,
+  faCss3Alt,
+  faSass,
+  faJsSquare,
+  faReact,
+  faFigma,
+} from "@fortawesome/free-brands-svg-icons";
+
 const SkillsCard = () => {
   return (
     <CardStyled>
@@ -15,9 +27,21 @@ const SkillsCard = () => {
           <div className="underline"></div>
         </div>
         <div className="main-text">
-          <p>I am based in Warsaw Poland</p>
-          <p>Currently I am in my final year of PhD in chemistry</p>
-          <p>I am a self thought JS/React developer</p>
+          <div className="column">
+            <FontAwesomeIcon icon={faHtml5} />
+            <FontAwesomeIcon icon={faBootstrap} />
+          </div>
+          <div className="column">
+            <FontAwesomeIcon icon={faCss3Alt} />
+            <FontAwesomeIcon icon={faSass} />
+          </div>
+          <div className="column">
+            <FontAwesomeIcon icon={faJsSquare} />
+            <FontAwesomeIcon icon={faReact} />
+          </div>
+          <div className="column">
+            <FontAwesomeIcon icon={faFigma} />
+          </div>
         </div>
       </SkillsCardStyled>
     </CardStyled>
@@ -37,7 +61,13 @@ const CardStyled = styled.div`
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  animation: 1s ${Animation};
+    overflow: hidden;
+  animation: 800ms ${Animation};
+
+
+  &:hover svg{
+    scale: 1.1;
+  }
 `;
 
 const SkillsCardStyled = styled.div`
@@ -52,15 +82,22 @@ const SkillsCardStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
-    gap: 25px;
+    gap: 60px;
     width: 100%;
-    margin-top: 50px;
     color: #3a3a3a;
     font-size: 20px;
 
-    span {
-      font-weight: bold;
+    .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+      font-size: 70px;
+
+      svg {
+        transition: all 500ms;
+      }
     }
   }
 

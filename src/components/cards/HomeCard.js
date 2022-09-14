@@ -1,7 +1,7 @@
 import React from "react";
 
 // styles
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // imgs
 import arrowsImg from "../../img/arrows.svg";
@@ -43,6 +43,7 @@ const CardStyled = styled.div`
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   z-index: 1;
+  overflow: hidden;
   animation: 1s ${Animation};
 `;
 
@@ -60,8 +61,8 @@ const HomeCardStyled = styled.div`
     align-items: flex-start;
     flex-direction: column;
     gap: 25px;
+    margin-top: 30px;
     width: 100%;
-    margin-top: 10px;
     font-size: 20px;
 
     span {
