@@ -8,7 +8,7 @@ import { bounceInRight } from "react-animations";
 
 const ProjectsCard = () => {
   return (
-    <CardStyled>
+    <CardStyled className="card">
       <ProjectsCardStyled>
         <div className="title">
           <h1>Projects</h1>
@@ -54,19 +54,9 @@ const ProjectsCard = () => {
 const Animation = keyframes`${bounceInRight}`;
 
 const CardStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 750px;
-  height: 400px;
-  border: 0.5px solid black;
-  border-radius: 6px;
-  background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  overflow: hidden;
-  animation: 800ms ${Animation};
-`;
+animation: 800ms ${Animation};
+`
+
 
 const ProjectsCardStyled = styled.div`
   display: flex;

@@ -21,6 +21,10 @@ const LeftArrow = ({ currentCard }) => {
 
 const LeftArrowStyled = styled.div`
   left: 50px;
+
+  @media screen and (max-width: 1200px) {
+    left: 20px;
+  }
 `;
 
 export default LeftArrow;

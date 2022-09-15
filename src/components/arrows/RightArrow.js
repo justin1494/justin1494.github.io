@@ -22,6 +22,9 @@ const RightArrow = ({ currentCard }) => {
 
 const RightArrowStyled = styled.div`
   right: 50px;
+  @media screen and (max-width: 1200px) {
+    right: 20px;
+  }
 `;
 
 export default RightArrow;

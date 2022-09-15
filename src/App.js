@@ -43,23 +43,18 @@ function App() {
     } else if (e.key === "ArrowLeft") {
       setCard(4);
       setCurrentCard("about");
+    } else if (e.key === "Enter") {
+      setCard(0);
+      setCurrentCard("home");
     }
   };
   useEffect(() => {
     document.addEventListener("keydown", keyDownHandler, true);
   }, []);
 
-  // useEffect(() => {
-  //   if (card === 1) {
-  //   } else if (card === 2) {
-  //   } else if (card === 3) {
-  //   } else if (card === 4) {
-  //   }
-  // }, [card]);
-
   return (
     <AppStyled className="app">
-      <GlobalStyle />
+      <GlobalStyle/>
       {allCards[card]}
       <RightArrow currentCard={currentCard} />
       <DownArrow currentCard={currentCard} />
@@ -75,11 +70,15 @@ const AppStyled = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: -webkit-fill-available;
   background-image: url(${BackgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+  /* @media screen and (min-height: 1000px) {
+    min-height: 100vh;
+  } */
 `;
 
 export default App;

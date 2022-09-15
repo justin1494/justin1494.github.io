@@ -13,6 +13,20 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono', monospace;
   }
 
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 400px;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    overflow: hidden;
+  }
+
   .title, .controls {
     position: relative;
     margin-top: 10px;
@@ -51,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
     animation: 700ms ${UnderlineAnimation} forwards;
     animation-delay: 600ms;
     }
-  }
+  
 
   .main-text {
     margin-top: 60px;
@@ -102,6 +116,24 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+
+
+  @media screen and (max-width: 1200px) {
+.card {
+  width: 450px;
+  height: 350px;
+}
+
+.arrow {
+  font-size: 14px;
+  svg {
+    font-size: 20px;
+  }
+}
+
+  }
+
+
 `;
 
 export default GlobalStyle;

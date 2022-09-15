@@ -8,7 +8,7 @@ import { bounceInLeft } from "react-animations";
 
 const AboutCard = () => {
   return (
-    <CardStyled>
+    <CardStyled className="card">
       <AboutCardStyled>
         <div className="title">
           <h1>About</h1>
@@ -26,20 +26,9 @@ const AboutCard = () => {
 
 const Animation = keyframes`${bounceInLeft}`;
 
-const CardStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 750px;
-  height: 400px;
-  border: 0.5px solid black;
-  border-radius: 6px;
-  background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    overflow: hidden;
-  animation: 800ms ${Animation};
-`;
+const CardStyled = styled.div `
+animation: 800ms ${Animation};
+`
 
 const AboutCardStyled = styled.div`
   display: flex;
