@@ -54,9 +54,8 @@ const ProjectsCard = () => {
 const Animation = keyframes`${bounceInRight}`;
 
 const CardStyled = styled.div`
-animation: 800ms ${Animation};
-`
-
+  animation: 800ms ${Animation};
+`;
 
 const ProjectsCardStyled = styled.div`
   display: flex;
@@ -98,6 +97,19 @@ const ProjectsCardStyled = styled.div`
         font-size: 18px;
         font-style: italic;
         color: #707070;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .main-text {
+      .project {
+
+        &__title {
+          font-size: 15px;
+        }
+        &__desc {
+          font-size: 12px;
+        }
       }
     }
   }
