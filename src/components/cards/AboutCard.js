@@ -15,9 +15,17 @@ const AboutCard = () => {
           <div className="underline"></div>
         </div>
         <div className="main-text">
-          <p>I am based in <span>Warsaw, Poland</span></p>
-          <p>Currently I am in my final year of my <span>PhD </span>at the faculty of chemistry at the <span>University of Warsaw</span></p>
-          <p>For the last <span>year and a half</span>, I have been following the path to becoming a <span> react front-end developer</span></p>
+          <p>
+            I am based in <span>Warsaw, Poland</span>
+          </p>
+          <p>
+            Currently I am in my final year of my <span>PhD </span>at the
+            faculty of chemistry at the <span>University of Warsaw</span>
+          </p>
+          <p>
+            For the last <span>year and a half</span>, I have been following the
+            path to becoming a <span> react front-end developer</span>
+          </p>
         </div>
       </AboutCardStyled>
     </CardStyled>
@@ -26,9 +34,9 @@ const AboutCard = () => {
 
 const Animation = keyframes`${bounceInLeft}`;
 
-const CardStyled = styled.div `
-animation: 800ms ${Animation};
-`
+const CardStyled = styled.div`
+  animation: 800ms ${Animation};
+`;
 
 const AboutCardStyled = styled.div`
   display: flex;
@@ -50,7 +58,7 @@ const AboutCardStyled = styled.div`
     color: #3a3a3a;
     font-size: 20px;
 
-    p{
+    p {
       line-height: 30px;
     }
 
@@ -68,6 +76,14 @@ const AboutCardStyled = styled.div`
 
     p {
       font-style: italic;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main-text {
+      gap: 8px;
+      margin-top: 30px;
+      font-size: 16px;
     }
   }
 `;
