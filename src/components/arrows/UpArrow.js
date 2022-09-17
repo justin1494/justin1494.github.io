@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-
 const UpArrow = ({ currentCard }) => {
   let animation = "";
 
@@ -21,6 +20,11 @@ const UpArrow = ({ currentCard }) => {
 
 const UpArrowStyled = styled.div`
   top: 50px;
+
+  @media screen and (max-width: 800px) {
+    top: 6%;
+    right: 10%;
+  }
 `;
 
 export default UpArrow;

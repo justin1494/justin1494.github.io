@@ -19,7 +19,7 @@ import styled from "styled-components";
 
 function App() {
   // states
-  const [card, setCard] = useState(4);
+  const [card, setCard] = useState(0);
   const [currentCard, setCurrentCard] = useState("home");
 
   const allCards = [

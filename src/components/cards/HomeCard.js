@@ -117,6 +117,28 @@ const HomeCardStyled = styled.div`
       display: none;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+
+    .main {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      gap: 0;
+      &__img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      &__text {
+        gap: 15px;
+        font-size: 18px;
+      }
+    }
+    .controls {
+      display: none;
+    }
+  }
 `;
 
 export default HomeCard;

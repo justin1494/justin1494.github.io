@@ -137,6 +137,26 @@ h1 {
 
   }
 
+  @media screen and (max-width: 800px) {
+h1 {
+  font-size: 18px;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+}
+
+.arrow {
+
+  font-size: 12px;
+  svg {
+    display: none;
+  }
+}
+
+  }
+
 
 `;
 

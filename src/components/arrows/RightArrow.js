@@ -25,6 +25,10 @@ const RightArrowStyled = styled.div`
   @media screen and (max-width: 1200px) {
     right: 20px;
   }
+  @media screen and (max-width: 800px) {
+    bottom: 6%;
+    right: 10%;
+  }
 `;
 
 export default RightArrow;

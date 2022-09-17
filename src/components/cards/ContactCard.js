@@ -124,7 +124,7 @@ const ContactCardStyled = styled.div`
       margin: 60px 0;
       width: 90%;
       .contact {
-
+        
         &__icon {
           font-size: 28px;
         }

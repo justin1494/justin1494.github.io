@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-const DownArrow = ({currentCard}) => {
-
+const DownArrow = ({ currentCard }) => {
   let animation = "";
 
   if (currentCard === "contact") {
@@ -12,7 +11,7 @@ const DownArrow = ({currentCard}) => {
   }
 
   return (
-    <DownArrowStyled className={`down-arrow arrow ${animation}`} >
+    <DownArrowStyled className={`down-arrow arrow ${animation}`}>
       <FontAwesomeIcon icon={faAnglesDown} />
       <p>Contact</p>
     </DownArrowStyled>
@@ -21,6 +20,11 @@ const DownArrow = ({currentCard}) => {
 
 const DownArrowStyled = styled.div`
   bottom: 50px;
+
+  @media screen and (max-width: 800px) {
+    bottom: 6%;
+    left: 10%;
+  }
 `;
 
 export default DownArrow;
