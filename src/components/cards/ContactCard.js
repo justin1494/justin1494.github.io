@@ -118,6 +118,22 @@ const ContactCardStyled = styled.div`
       font-style: italic;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    .main-text {
+      margin: 60px 0;
+      width: 90%;
+      .contact {
+
+        &__icon {
+          font-size: 28px;
+        }
+        &__text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 `;
 
 export default ContactCard;
