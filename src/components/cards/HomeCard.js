@@ -22,7 +22,7 @@ const HomeCard = () => {
           />
           <div className="main__text">
             <p>
-              Welcome to <span>my portfolio</span> page!
+              Welcome to my <span>portfolio</span> page!
             </p>
             <p>
               My name is <span>Marcin Jaskółowski</span>
@@ -42,7 +42,6 @@ const HomeCard = () => {
 const Animation = keyframes`${zoomIn}`;
 
 const CardStyled = styled.div`
-
   animation: 1s ${Animation};
 `;
 
@@ -94,6 +93,28 @@ const HomeCardStyled = styled.div`
 
     p {
       font-style: italic;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+
+    .main {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      gap: 0;
+      &__img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      &__text {
+        gap: 15px;
+        font-size: 18px;
+      }
+    }
+    .controls {
+      display: none;
     }
   }
 `;

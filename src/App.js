@@ -53,16 +53,30 @@ function App() {
   }, []);
 
   return (
-    <AppStyled className="app">
-      <GlobalStyle/>
-      {allCards[card]}
-      <RightArrow currentCard={currentCard} />
-      <DownArrow currentCard={currentCard} />
-      <UpArrow currentCard={currentCard} />
-      <LeftArrow currentCard={currentCard} />
-    </AppStyled>
+    <WrapperStyled>
+      <AppStyled className="app">
+        <GlobalStyle />
+        {allCards[card]}
+        <RightArrow currentCard={currentCard} />
+        <DownArrow currentCard={currentCard} />
+        <UpArrow currentCard={currentCard} />
+        <LeftArrow currentCard={currentCard} />
+      </AppStyled>
+    </WrapperStyled>
   );
 }
+
+const WrapperStyled = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* @media screen and (max-width: 900px) {
+    align-items: flex-start;
+    height: 85vh;
+  } */
+`;
 
 const AppStyled = styled.div`
   position: relative;
@@ -70,15 +84,15 @@ const AppStyled = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
   background-image: url(${BackgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 
-  /* @media screen and (min-height: 1000px) {
-    min-height: 100vh;
-  } */
+  @media screen and (max-width: 1200px) {
+    min-height: 85vh;
+  }
 `;
 
 export default App;

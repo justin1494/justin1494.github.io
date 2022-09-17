@@ -136,4 +136,6 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
+// nex breakpoint on 830px
+
 export default GlobalStyle;
