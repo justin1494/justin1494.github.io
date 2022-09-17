@@ -90,15 +90,14 @@ const SkillsCardStyled = styled.div`
     }
   }
 
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    p {
-      font-style: italic;
-    }
+  @media screen and (max-width: 1200px) {
+.main-text {
+  gap: 30px;
+  .column {
+    font-size: 55px;
+  }
+}
   }
 `;
 

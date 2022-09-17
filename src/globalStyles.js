@@ -119,6 +119,10 @@ const GlobalStyle = createGlobalStyle`
 
 
   @media screen and (max-width: 1200px) {
+h1 {
+  font-size: 24px;
+}
+
 .card {
   width: 450px;
   height: 350px;

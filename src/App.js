@@ -71,11 +71,6 @@ const WrapperStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* @media screen and (max-width: 900px) {
-    align-items: flex-start;
-    height: 85vh;
-  } */
 `;
 
 const AppStyled = styled.div`
