@@ -99,6 +99,16 @@ const SkillsCardStyled = styled.div`
   }
 }
   }
+
+  @media screen and (max-width: 800px) {
+.main-text {
+ margin-top: 80px ;
+  gap: 20px;
+  .column {
+    font-size: 50px;
+  }
+}
+  }
 `;
 
 export default SkillsCard;
