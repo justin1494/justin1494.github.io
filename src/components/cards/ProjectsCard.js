@@ -17,7 +17,7 @@ const ProjectsCard = () => {
         <div className="main-text">
           <div className="project">
             <a
-              href="https://justin1494.github.io/planets_site/"
+              href="https://celebrated-queijadas-2431fb.netlify.app/"
               target="_blank"
               className="project__title"
               rel="noreferrer">
@@ -27,7 +27,7 @@ const ProjectsCard = () => {
           </div>
           <div className="project">
             <a
-              href="https://justin1494.github.io/Tic_tac_toe/"
+              href="https://sprightly-kulfi-f88543.netlify.app/"
               target="_blank"
               className="project__title"
               rel="noreferrer">
@@ -103,7 +103,6 @@ const ProjectsCardStyled = styled.div`
   @media screen and (max-width: 1200px) {
     .main-text {
       .project {
-
         &__title {
           font-size: 15px;
         }
