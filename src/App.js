@@ -30,8 +30,10 @@ function App() {
     <AboutCard />,
   ];
 
+
+  // CurrentCard deals with the animations of 'arrows'
   const keyDownHandler = (e) => {
-    if (e.key === "ArrowRight") {
+    if (e.key === "ArrowRight" || e.target === "ArrowRight") {
       setCard(1);
       setCurrentCard("projects");
     } else if (e.key === "ArrowDown") {
@@ -52,14 +54,32 @@ function App() {
     document.addEventListener("keydown", keyDownHandler, true);
   }, []);
 
+  const checkTarget = (e) => {
+    const target = e.target.innerText;
+
+    if (target === "Projects") {
+      setCard(1);
+      setCurrentCard("projects");
+    } else if (target === "Contact") {
+      setCard(2);
+      setCurrentCard("contact");
+    } else if (target === "My skills") {
+      setCard(3);
+      setCurrentCard("skills");
+    } else if (target === "About me") {
+      setCard(4);
+      setCurrentCard("about");
+    }
+  };
+
   return (
     <WrapperStyled>
-      <AppStyled className="app">
+      <AppStyled className="app" onClick={checkTarget}>
         <GlobalStyle />
         {allCards[card]}
-        <RightArrow currentCard={currentCard} />
-        <DownArrow currentCard={currentCard} />
-        <UpArrow currentCard={currentCard} />
+        <RightArrow currentCard={currentCard} onClick={checkTarget} />
+        <DownArrow currentCard={currentCard} onClick={checkTarget} />
+        <UpArrow currentCard={currentCard} onClick={checkTarget} />
         <LeftArrow currentCard={currentCard} />
       </AppStyled>
     </WrapperStyled>
@@ -86,7 +106,7 @@ const AppStyled = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
-    min-height: 85vh;
+    min-height: 90vh;
   }
 `;
 

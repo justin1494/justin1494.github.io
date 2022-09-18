@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
-
 const RightArrow = ({ currentCard }) => {
   let animation = "";
 
@@ -12,8 +11,7 @@ const RightArrow = ({ currentCard }) => {
   }
 
   return (
-    <RightArrowStyled
-      className={`right-arrow arrow ${animation}`}>
+    <RightArrowStyled className={`right-arrow arrow ${animation}`}>
       <FontAwesomeIcon icon={faAnglesRight} />
       <p>Projects</p>
     </RightArrowStyled>
@@ -22,6 +20,7 @@ const RightArrow = ({ currentCard }) => {
 
 const RightArrowStyled = styled.div`
   right: 50px;
+
   @media screen and (max-width: 1200px) {
     right: 20px;
   }

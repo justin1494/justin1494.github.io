@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   gap: 20px;
   animation: 0.5s startAnimation;
+  cursor: pointer;
 
   p{
     font-family: 'Press Start 2P', cursive;
@@ -129,9 +130,10 @@ h1 {
 }
 
 .arrow {
+  padding: 20px 10px;
   font-size: 14px;
   svg {
-    font-size: 20px;
+    display: none;
   }
 }
 
@@ -140,23 +142,17 @@ h1 {
   @media screen and (max-width: 800px) {
 h1 {
   font-size: 18px;
-}
+  }
 
 .card {
   width: 350px;
   height: 400px;
-}
+  }
 
 .arrow {
-
   font-size: 12px;
-  svg {
-    display: none;
   }
 }
-
-  }
-
 
 `;
 
