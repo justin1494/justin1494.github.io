@@ -37,13 +37,15 @@ const ProjectsCard = () => {
           </div>
           <div className="project">
             <a
-              href="https://cosmic-cranachan-b6e386.netlify.app/"
+              href="https://magenta-marshmallow-a93473.netlify.app"
               target="_blank"
               className="project__title"
               rel="noreferrer">
               Notly - notes and articles managment tool
             </a>
-            <p className="project__desc">(ReactJS, Redux toolkit, tailwindcss)</p>
+            <p className="project__desc">
+              (ReactJS, Redux toolkit, tailwindcss)
+            </p>
           </div>
         </div>
       </ProjectsCardStyled>
