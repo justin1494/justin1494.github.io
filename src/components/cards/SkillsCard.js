@@ -16,6 +16,8 @@ import {
   faJsSquare,
   faReact,
   faFigma,
+  faNodeJs,
+  
 } from "@fortawesome/free-brands-svg-icons";
 
 const SkillsCard = () => {
@@ -41,6 +43,7 @@ const SkillsCard = () => {
           </div>
           <div className="column">
             <FontAwesomeIcon icon={faFigma} />
+            <FontAwesomeIcon icon={faNodeJs} />
           </div>
         </div>
       </SkillsCardStyled>
@@ -51,10 +54,9 @@ const SkillsCard = () => {
 const Animation = keyframes`${bounceInDown}`;
 
 const CardStyled = styled.div`
+  animation: 800ms ${Animation};
 
-animation: 800ms ${Animation};
-
-  &:hover svg{
+  &:hover svg {
     scale: 1.1;
   }
 `;
@@ -90,24 +92,23 @@ const SkillsCardStyled = styled.div`
     }
   }
 
-
   @media screen and (max-width: 1200px) {
-.main-text {
-  gap: 30px;
-  .column {
-    font-size: 55px;
-  }
-}
+    .main-text {
+      gap: 30px;
+      .column {
+        font-size: 55px;
+      }
+    }
   }
 
   @media screen and (max-width: 800px) {
-.main-text {
- margin-top: 80px ;
-  gap: 20px;
-  .column {
-    font-size: 50px;
-  }
-}
+    .main-text {
+      margin-top: 80px;
+      gap: 20px;
+      .column {
+        font-size: 50px;
+      }
+    }
   }
 `;
 
