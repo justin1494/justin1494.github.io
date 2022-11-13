@@ -17,6 +17,18 @@ const ProjectsCard = () => {
         <div className="main-text">
           <div className="project">
             <a
+              href="https://magenta-marshmallow-a93473.netlify.app"
+              target="_blank"
+              className="project__title"
+              rel="noreferrer">
+              Notly - notes and articles managment tool
+            </a>
+            <p className="project__desc">
+              (ReactJS, Redux toolkit, tailwindcss)
+            </p>
+          </div>
+          <div className="project">
+            <a
               href="https://sprightly-kulfi-f88543.netlify.app/"
               target="_blank"
               className="project__title"
@@ -34,18 +46,6 @@ const ProjectsCard = () => {
               Waves - online music player
             </a>
             <p className="project__desc">(ReactJS)</p>
-          </div>
-          <div className="project">
-            <a
-              href="https://magenta-marshmallow-a93473.netlify.app"
-              target="_blank"
-              className="project__title"
-              rel="noreferrer">
-              Notly - notes and articles managment tool
-            </a>
-            <p className="project__desc">
-              (ReactJS, Redux toolkit, tailwindcss)
-            </p>
           </div>
         </div>
       </ProjectsCardStyled>
