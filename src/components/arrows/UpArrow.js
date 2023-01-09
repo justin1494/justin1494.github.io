@@ -22,7 +22,7 @@ const UpArrowStyled = styled.div`
   top: 50px;
 
   @media screen and (max-width: 800px) {
-    top: 6%;
+    top: 10%;
     right: 10%;
   }
 `;

@@ -25,7 +25,7 @@ const RightArrowStyled = styled.div`
     right: 20px;
   }
   @media screen and (max-width: 800px) {
-    bottom: 6%;
+    bottom: 10%;
     right: 10%;
   }
 `;

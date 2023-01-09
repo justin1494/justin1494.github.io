@@ -77,6 +77,7 @@ const SkillsCardStyled = styled.div`
     width: 100%;
     color: #3a3a3a;
     font-size: 20px;
+    margin-top: 100px;
 
     .column {
       display: flex;
@@ -103,7 +104,7 @@ const SkillsCardStyled = styled.div`
 
   @media screen and (max-width: 800px) {
     .main-text {
-      margin-top: 80px;
+      margin-top: 110px;
       gap: 20px;
       .column {
         font-size: 50px;

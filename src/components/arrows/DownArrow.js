@@ -22,7 +22,7 @@ const DownArrowStyled = styled.div`
   bottom: 50px;
 
   @media screen and (max-width: 800px) {
-    bottom: 6%;
+    bottom: 10%;
     left: 10%;
   }
 `;

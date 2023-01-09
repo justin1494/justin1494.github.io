@@ -27,7 +27,7 @@ const LeftArrowStyled = styled.div`
 
     @media screen and (max-width: 800px) {
       left: 10%;
-      top: 6%;
+      top: 10%;
 
   }
   }

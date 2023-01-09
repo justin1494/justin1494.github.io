@@ -47,7 +47,7 @@ const CardStyled = styled.div`
 
 const HomeCardStyled = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 80%;
@@ -123,7 +123,7 @@ const HomeCardStyled = styled.div`
 
     .main {
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       height: 100%;
       gap: 0;
       &__img {

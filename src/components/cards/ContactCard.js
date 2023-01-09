@@ -78,6 +78,7 @@ const ContactCardStyled = styled.div`
     gap: 25px;
     width: 100%;
     margin-left: 100px;
+    margin-top: 100px;
     font-size: 20px;
 
     .contact {
@@ -135,7 +136,7 @@ const ContactCardStyled = styled.div`
   }
   @media screen and (max-width: 800px) {
     .main-text {
-      margin: 35px 0;
+      margin: 70px 0;
       width: 90%;
 
       .contact {

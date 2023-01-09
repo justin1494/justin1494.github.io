@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     width: 750px;
-    height: 400px;
+    height: 500px;
     border: 0.5px solid black;
     border-radius: 6px;
     background-color: white;
@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
 
   .title, .controls {
     position: relative;
-    margin-top: 10px;
    
   }
 
@@ -130,7 +129,7 @@ h1 {
 }
 
 .arrow {
-  padding: 20px 10px;
+  padding: 0 10px;
   font-size: 14px;
   svg {
     display: none;
@@ -146,7 +145,7 @@ h1 {
 
 .card {
   width: 350px;
-  height: 400px;
+  height: 490px;
   }
 
 .arrow {
