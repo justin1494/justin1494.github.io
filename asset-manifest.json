@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/justin1494.github.io/static/js/main.158a36a1.js",
-    "static/js/787.c66b9096.chunk.js": "/justin1494.github.io/static/js/787.c66b9096.chunk.js",
-    "static/media/bg2.jpg": "/justin1494.github.io/static/media/bg2.13c41db45f2fa31e73c6.jpg",
-    "static/media/MJ_zdjęcie.jfif": "/justin1494.github.io/static/media/MJ_zdjęcie.a4105cd955780a2d32c4.jfif",
-    "static/media/arrows.svg": "/justin1494.github.io/static/media/arrows.b9b42c4cc23cda0615d3b36811f000df.svg",
-    "index.html": "/justin1494.github.io/index.html",
-    "main.158a36a1.js.map": "/justin1494.github.io/static/js/main.158a36a1.js.map",
-    "787.c66b9096.chunk.js.map": "/justin1494.github.io/static/js/787.c66b9096.chunk.js.map"
+    "main.js": "/static/js/main.9a176048.js",
+    "static/js/787.c66b9096.chunk.js": "/static/js/787.c66b9096.chunk.js",
+    "static/media/bg2.jpg": "/static/media/bg2.13c41db45f2fa31e73c6.jpg",
+    "static/media/MJ_zdjęcie.jfif": "/static/media/MJ_zdjęcie.a4105cd955780a2d32c4.jfif",
+    "static/media/arrows.svg": "/static/media/arrows.b9b42c4cc23cda0615d3b36811f000df.svg",
+    "index.html": "/index.html",
+    "main.9a176048.js.map": "/static/js/main.9a176048.js.map",
+    "787.c66b9096.chunk.js.map": "/static/js/787.c66b9096.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.158a36a1.js"
+    "static/js/main.9a176048.js"
   ]
 }
